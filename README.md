@@ -1,5 +1,4 @@
 # Webprogramlama_01
-Merhaba Github
 <!DOCTYPE html>
 <html>
 <head>
