@@ -1,0 +1,28 @@
+<input type="text" id="yaricap" placeholder="yaricap Girin">
+<input type="text" id="yukseklik" placeholder="Yüksekliği Girin">
+<input type="button" value="Hesapla" id="hesapla">
+<script>
+ 
+ 
+function hesapla(){
+//text kutusu içindeki değerleri okuyup sayi1,sayi2 değişkenine aktarıyoruz.
+var sayi1=document.getElementById("yaricap").value;
+var sayi2=document.getElementById("yukseklik").value;
+ 
+//text kutusuna girilen değerler metinsel türdedir. Hesaplama yapabilmek için sayıya çeviriyoruz.
+sayi1=Number(sayi1);
+sayi2=Number(sayi2);
+
+ 
+var hacmi=Math.PI*sayi1*sayi1*sayi2 ;
+alert("Silindirn hacmi:"+hacmi);
+}
+ 
+//hesaplama yapması için hesap butonunu seçiyoruz.
+var hesapBtn=document.getElementById("hesapla");
+ 
+//fonksiyonu olaya bağlıyoruz.
+hesapBtn.onclick=hesapla;
+ 
+</script>
+ 
